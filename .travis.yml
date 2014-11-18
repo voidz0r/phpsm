@@ -2,15 +2,3 @@ language: php
 
 php:
   - 5.5
-
-before_script:
-  - composer self-update
-  - composer install
-
-
-script: phpunit -c tests
-  
-notifications:
-  email:
-    - cristian.giustini@live.it
-  
