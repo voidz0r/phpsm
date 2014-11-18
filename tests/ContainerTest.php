@@ -8,7 +8,7 @@ class ContainerTest extends \PHPUnit_Framework_TestCase
     public function setUp()
     {
         $adapter = new XMLAdapter();
-        $container = new Container($adapter, "./services.xml");
+        $container = new Container($adapter, "./tests/services.xml");
         $this->container = $container;
     }
     
