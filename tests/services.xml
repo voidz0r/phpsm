@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<service_manager xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schema.xsd">
+	<factories>
+		<factory alias="FactoryTest" class="FactoryTest" />
+	</factories>
+	<aliases>
+		<alias class="FactoryTest" value="AliasService" />
+	</aliases>
+	<services>
+		<service alias="ServiceTest" class="ServiceTest" />
+	</services>
+<!-- 	<aliases> -->
+<!-- 		<alias class="Voidzone\PHPsm\ServiceTest" value="STest" /> -->
+<!-- 	</aliases> -->
+<!-- 	<services> -->
+<!-- 		<service class="Voidzone\PHPsm\ServiceTest" /> -->
+<!-- 	</services> -->
+</service_manager>

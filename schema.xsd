@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="service_manager">
+		<xs:annotation>
+			<xs:documentation>The root tag of the service manager
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="factories">
+					<xs:annotation>
+						<xs:documentation>Define a list of factory elements.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="factory">
+								<xs:annotation>
+									<xs:documentation>A factory is a class that extends the FactoryInterface .</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:attribute name="class"
+										type="xs:string">
+                                        <xs:annotation>
+                                        	<xs:documentation>Define the class to be instantiated</xs:documentation>
+                                        </xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="alias"
+										type="xs:string">
+                                        <xs:annotation>
+                                        	<xs:documentation>The alias of the factory service</xs:documentation>
+                                        </xs:annotation>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="aliases">
+					<xs:annotation>
+						<xs:documentation>Define a list alias elements.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="alias">
+								<xs:annotation>
+									<xs:documentation>An alias is a simple shortcut to your class.</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:attribute name="class"
+										type="xs:string">
+                                        <xs:annotation>
+                                        	<xs:documentation>The class to be instantiated</xs:documentation>
+                                        </xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="value"
+										type="xs:string">
+                                        <xs:annotation>
+                                        	<xs:documentation>The alias of the class</xs:documentation>
+                                        </xs:annotation>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="services">
+					<xs:annotation>
+						<xs:documentation>Define a list of service elements.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="service">
+								<xs:annotation>
+									<xs:documentation>A service is a class that implements the ServiceInterface and createService method</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:attribute name="class"
+										type="xs:string">
+                                        <xs:annotation>
+                                        	<xs:documentation>The class to be instantiated</xs:documentation>
+                                        </xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="alias"
+										type="xs:string">
+                                        <xs:annotation>
+                                        	<xs:documentation>The alias of the service</xs:documentation>
+                                        </xs:annotation>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+</xs:schema>

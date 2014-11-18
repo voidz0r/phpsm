@@ -1,0 +1,23 @@
+{
+  "name" : "voidzone/phpsm",
+  "description" : "A simple PHP service manager",
+  "require-dev" : {
+    "phpunit/phpunit" : "=4.3.5"
+  },
+  "authors" : [ {
+    "name" : "Cristian 'void' Giustini",
+    "email" : "void@voidzone.it"
+  } ],
+  "minimum-stability" : "stable",
+  "autoload" : {
+    "psr-4" : {
+      "Voidzone\\" : "src/Voidzone/"
+    },
+    "files": [
+    	"tests/FactoryTest.php",
+    	"tests/ServiceTest.php"
+    ]
+  },
+  "license" : "GPL",
+  "homepage" : "http://www.voidzone.it"
+}
