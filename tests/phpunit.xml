@@ -1,6 +1,6 @@
 <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/3.7/phpunit.xsd"
-	bootstrap="/Users/cristian/Documents/Lavoro/Projects/php-sm/tests/bootstrap.php"
+	bootstrap="tests/bootstrap.php"
 	backupGlobals="true" 
 	backupStaticAttributes="false" 
 	cacheTokens="false"
