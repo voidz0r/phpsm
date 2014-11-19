@@ -23,7 +23,7 @@
 	verbose="false">
 	<testsuites>
       <testsuite name="UnitTests">
-        <directory suffix=".php">/Users/cristian/Documents/Lavoro/Projects/php-sm/tests</directory>
+        <directory suffix=".php">.</directory>
       </testsuite>
 	</testsuites>
 	<logging>
