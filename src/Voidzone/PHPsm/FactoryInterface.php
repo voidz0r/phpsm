@@ -3,7 +3,7 @@ namespace Voidzone\PHPsm;
 
 interface FactoryInterface
 {
-    public function factory();
+    public function factory(ServiceManager $sm);
 }
 
 ?>

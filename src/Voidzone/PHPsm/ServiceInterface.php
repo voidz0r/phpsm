@@ -3,7 +3,7 @@ namespace Voidzone\PHPsm;
 
 interface ServiceInterface
 {
-    public function createService();
+    public function createService(ServiceManager $serviceManager);
 }
 
 ?>
