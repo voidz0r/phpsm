@@ -8,8 +8,8 @@ class ServiceManager
     const FACTORY = 'factory';
     const ALIAS   = 'alias';
     
-    public $services = array();
-    public $factories = array();
+    protected $services = array();
+    protected $factories = array();
     protected $aliases = array();
     
     public function __construct(Adapter $adapter, $configFile) 
